@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="scripts/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+
+</head>
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>Travian Overwatch</h1>
+            </div>
+        </div>
+
+        <!-- Login form -->
+        <div class="container">
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="checkbox"> Remember me</label>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8"><button type="submit" class="btn btn-default" id="loginBtn">Login</button></div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div id="modal-content">
+                <span class="close" id="close">&times;</span>
+                <p>Wrong username or password</p>
+            </div>
+        </div>
+</body>
+</html>
